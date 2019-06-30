@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
 
   def description
     product = Product.find(params[:id])
-    render plain: product.description.to_s
+    render plain: product.description
   end
 
   def new
